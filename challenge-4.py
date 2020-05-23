@@ -1,11 +1,17 @@
 from random import randint
 
-rand_num = randint(0, 100)
+rn = randint(0, 100)
 count = 0
 
-while count < 5:
-  print("What is your name?")
-  input()
+while count < 20:
+  print("What is your number?")
+  wans = input()
+  ans = int(wans)
+  if ans > rn:
+    print("Too high!")
+  elif ans < rn:
+    print("Too low!")
+  elif ans == rn:
+    print("You got it!")
   count = count + 1
-
-print("All done!")
+  
